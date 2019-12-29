@@ -1,0 +1,37 @@
+<div class="grid-container ">
+    <h2 class="text-center">SUBJECTS DATA</h2>
+    <form action="">
+        <span id="i-con" onclick="hideEl(this)"></span>
+        <div>
+            <label>Subject Id</label>
+            <input type="text" id="subj_id" required pattern="^[0-9]{1,3}$">
+        </div>
+        <div>
+            <label>Subject Name</label>
+            <input type="text" id="subj_name" required pattern="^[a-zA-Z]{3,15}$">
+        </div>
+        <div>
+            <label>Subject Category</label>
+            <input type="text" id="subj_category" required pattern="^[0-9a-zA-Z ]{3,15}$">
+        </div>
+        <div>
+           <button class="button primary" ng-click="addSubject()"> Add Subject</button>
+        </div>
+    </form>
+    <div>
+        <table>
+            <thead>
+                <td>Subject Id</td>
+                <td>Subject Name</td>
+                <td>Subject Category</td>
+            </thead>
+            <tbody>
+                <tr ng-repeat="subj in subjects">
+                    <td>{{subj.id}}</td>
+                    <td>{{subj.name}}</td>
+                    <td>{{subj.category}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

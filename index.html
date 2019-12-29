@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="classApp">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Class Manager</title>
+    <link href="assets/styles/foundation.css" rel="stylesheet">
+    <link href="assets/styles/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="smb-navigation top-bar" data-animate="hinge-in-from-top hinge-out-from-top" id="mymenu">
+   <div class="top-bar-right">
+       <ul class="dropdown menu text-center" data-dropdown-menu>
+           <li><a href="#!/">SCHEDULES</a></li>
+           <li><a href="#!/teachers">TEACHERS</a></li>
+           <li><a href="#!/subjects">SUBJECTS</a></li>
+       </ul>
+   </div>
+</div>
+<ng-view ng-controller="classController">
+
+</ng-view>
+</body>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-mocks.js"></script>-->
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/angular-mock.js"></script>
+<script src="assets/js/angular-routes.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/foundation.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

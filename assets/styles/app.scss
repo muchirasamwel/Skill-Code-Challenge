@@ -1,0 +1,70 @@
+@mixin border4px{
+  border-radius: 4px !important;
+  border:2px solid black;
+}
+body{
+  .hiddenform{
+    top: 0px;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+  }
+  .shownform{
+    height: 330px;
+    width: 100%;
+    opacity: 100;
+  }
+  .err{
+    background-color: #ff6a19;
+  }
+  .suc{
+    background-color: greenyellow;
+  }
+  #flexform{
+    transition: all 1s ease;
+    margin: auto;
+  }
+  .smb-navigation{
+    background-color: black;
+    //height: 50px;
+  }
+  .menu{
+    margin: auto !important;
+    background-color: black;
+    a{
+      color: white;
+      &:hover
+      {
+        font-weight: bolder;
+        font-size: 1.2em;
+        border-radius: 4px;
+      }
+    }
+  }
+  table{
+    thead{
+      background-color: black;
+      color: white;
+      font-weight:bold;
+    }
+    tbody{
+      tr{
+        &:hover{
+          background-color: yellow;
+          @include border4px;
+        }
+      }
+    }
+
+  }
+  form{
+    input{
+      &:focus{
+        color: blue;
+       @include border4px;
+      }
+    }
+  }
+}
+
+

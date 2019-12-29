@@ -1,0 +1,37 @@
+<div class="grid-container ">
+    <h2 class="text-center">TEACHERS DATA</h2>
+    <form action="">
+        <span id="i-con" onclick="hideEl(this)"></span>
+        <div>
+            <label>Teacher Id</label>
+            <input type="number" id="teach_id" required pattern="^[0-9]{1,3}$">
+        </div>
+        <div>
+            <label>Teacher Name</label>
+            <input type="text" id="teach_name" pattern="^[a-zA-Z]{3,15}$" maxlength="15" required>
+        </div>
+        <div>
+            <label>Teacher National id</label>
+            <input type="text" id="teach_nat_id" required pattern="^[0-9]{8}$" maxlength="8">
+        </div>
+        <div>
+            <button class="button primary" ng-click="addTeacher()"> Add Teacher</button>
+        </div>
+    </form>
+    <div>
+        <table>
+            <thead>
+            <td>Id</td>
+            <td>Teacher Name</td>
+            <td>National ID</td>
+            </thead>
+            <tbody>
+            <tr ng-repeat="teach in teachers">
+                <td>{{teach.id}}</td>
+                <td>{{teach.name}}</td>
+                <td>{{teach.nat_id}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

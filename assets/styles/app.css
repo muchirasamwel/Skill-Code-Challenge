@@ -1,0 +1,53 @@
+body .hiddenform {
+  top: 0px;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+body .shownform {
+  height: 330px;
+  width: 100%;
+  opacity: 100;
+}
+body .err {
+  background-color: #ff6a19;
+}
+body .suc {
+  background-color: greenyellow;
+}
+body #flexform {
+  transition: all 1s ease;
+  margin: auto;
+}
+body .smb-navigation {
+  background-color: black;
+}
+body .menu {
+  margin: auto !important;
+  background-color: black;
+}
+body .menu a {
+  color: white;
+}
+body .menu a:hover {
+  font-weight: bolder;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+body table thead {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+body table tbody tr:hover {
+  background-color: yellow;
+  border-radius: 4px !important;
+  border: 2px solid black;
+}
+body form input:focus {
+  color: blue;
+  border-radius: 4px !important;
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=app.css.map */
